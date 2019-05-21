@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>LogIn</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="cover" style="background-image: url(./assets/img/login3.jpg);">
+	<div class="form-container">
+            <p class="text-center" style="margin-top: 17px;">
+               <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>
+           </p>
+           <h4 class="text-center all-tittles" style="margin-bottom: 30px;">inicia sesión </h4>
+           <form action="/login" method="" autocomplete="off" class="full-box logInForm">
+                <div class="group-material-login">
+                  <input type="text" class="material-login-control" required="" maxlength="70">
+                  <span class="highlight-login"></span>
+                  <span class="bar-login"></span>
+                  <label><i class="zmdi zmdi-account"></i> &nbsp; Cuenta</label>
+                </div><br>
+                <div class="group-material-login">
+                  <input type="password" class="material-login-control" id="Userpass" required="" maxlength="70">
+                  <span class="highlight-login"></span>
+                  <span class="bar-login"></span>
+                  <label><i class="zmdi zmdi-lock"></i> &nbsp; Contraseña</label>
+                </div>
+                <br><br>
+                <button class="btn-login" type="submit">Ingresar al sistema &nbsp; <i class="zmdi zmdi-arrow-right"></i></button>
+            </form>
+        </div>  
+	<!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
